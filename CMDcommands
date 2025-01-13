@@ -117,27 +117,95 @@ The above prints all the folders, sub folders in a tree like format
 Changing colors:
         C:\Users\WELCOME>color /?
         The above displays all the available colors.
+Available colors:
+             0 = Black       8 = Gray
+             1 = Blue        9 = Light Blue
+             2 = Green       A = Light Green
+             3 = Aqua        B = Light Aqua
+             4 = Red         C = Light Red
+             5 = Purple      D = Light Purple
+             6 = Yellow      E = Light Yellow
+             7 = White       F = Bright White
+
+C:\Users\WELCOME>color 9
+The above command change the color to blue
+
+===========================================================================
+To create a file in a folder:
+            G:\My Drive\temp>echo > sample.txt
+            G:\My Drive\temp>echo > sample.java
+            The above create the files sample.txt and sample.java in the temp folder
+============================================================================
+Attribute for file in cmd:
+            G:\My Drive\temp>attrib sample.txt
+                     G:\My Drive\temp\sample.txt
+            The above shows the characteristics of the file like hidden, archieve etc...
+            G:\My Drive\temp>attrib +h sample.txt
+            The above command hides the sample.txt file in the temp folder.
+
+            G:\My Drive\temp>attrib sample.txt
+    H                G:\My Drive\temp\sample.txt
+The above command now shows the sample.txt as a hidden file.
+
+G:\My Drive\temp>attrib +r -h sample.txt
+
+G:\My Drive\temp>attrib sample.txt
+                     G:\My Drive\temp\sample.txt
+the above commands remove the sample.txt as hidden and makes it as read only.
+
+=====================================================================================
+To delete a file in a folder:
+keyword : del
+G:\My Drive\temp>echo > temp3
+
+G:\My Drive\temp>del temp3
+
+The above commands creates and delete the file temp3.
+The del command will permanently deletes the file even without moving it to the recycle bin.
+=========================================================================================
+G:\My Drive\temp>echo  Hi this will be appeared in the file> temp3
+The above line creates a file temp3 and writtens the text "Hi this will be appeared in the file" in it.
+=============================================================================================
+G:\My Drive\temp>type temp3
+ Hi this will be appeared in the file
+
+for the command type temp3
+the message in it will be displayed. 
+
+===================================================================
+G:\My Drive\temp>echo This overwrites the existing text in temp3 > temp3 // actually this delete the existing file and creates a new file and insert the text in it
+
+G:\My Drive\temp>type temp3
+This overwrites the existing text in temp3
+
+Appending:
+
+G:\My Drive\temp>echo This will be appended in the temp3 with the existing text in it >> temp3
+
+G:\My Drive\temp>type temp3
+This overwrites the existing text in temp3
+This will be appended in the temp3 with the existing text in it
 
 
+===========================================================================
+Copying a file:
 
+copy file_name folder_name
 
+G:\My Drive\temp>copy temp3 temp4
+        1 file(s) copied.
 
-        C:\Users\WELCOME>color 9
-        The above command change the color to blue
+The above command copied the temp3 file in temp folder to temp4 folder in temp folder
+Able to copy within the folders
 
+=========================================================================================
+Renaming a file:
 
+G:\My Drive\temp>rename sample.txt sample2.txt
+The above renames the sample.txt to sample2.txt
 
-
-
-
-
-
-
-
-
-
-
-
+=============================================================
+Thanks to M R Kishore Kumar
 
 
 

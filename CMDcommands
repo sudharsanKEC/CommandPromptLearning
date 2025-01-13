@@ -1,0 +1,163 @@
+Note: Command prompt is safe as well as danger even a small command as a mistake can lead to bigger problems
+      like OS crash.
+
+==============================================================================================================
+
+The default directory shown in the command prompt is C drive
+Command prompt is faster compared to GUI.
+
+===============================================================================================================
+
+Commands:
+cd - change dirctory
+syntax: cd folder_name
+eg: cd javalearning
+====================================================
+cd .. (double dot):
+      It goes to the previous previos folder
+Eg:  C:\Users\YourUsername\Documents>cd ..
+     C:\Users\YourUsername
+=====================================================
+cd ..\.. (double dot backward slash double dot):
+      It goes to the two previous folders
+Eg:   C:\Users\YourUsername\Documents>cd ..\..
+      C:\Users>
+======================================================
+tab key:
+      Pressing tab key gives the available 
+folders or files in a folder
+=====================================================================     
+dir command:
+     This command shows all the files and folders in a folder
+Eg:
+      dir C:\Windows
+
+    To display the hidden files in a folder
+Eg:   dir /a
+
+    To display the file according to their size.
+Eg:   dir /o:s
+
+    To display the files according to their alphabetical order.
+Eg:   dir /o:n
+
+    To display what a specific type of files(particular extension)
+Eg:   dir *.txt -> shows all the text files
+      dir *.png -> shows all the png files
+===========================================================================
+In cmd,Typing the file name dirctly on its folder opens it.
+
+up and down arrow for previous and back files
+
+cls - to clear the cmd.
+
+=============================================================================
+To create a folder using cmd:
+
+mkdir-makedirectory
+
+To create folder:
+Eg:
+  G:\My Drive>mkdir temp
+  The above command creates a folder in the My Drive 
+
+To delete folder:
+Eg:
+   G:\My Drive>rmdir temp
+   The above command deletes the folder permanently without moving it in to the recycle bin.
+
+To delete the folder completely including its sub folder:
+    G:\My Drive>rmdir /s temp
+    G:\My Drive>rmdir /s temp
+    temp, Are you sure (Y/N)? Y
+    The above command completely deletes the folders including its sub folders permanently without
+sending it into the recycle bin.
+ ======================================================================================================   
+
+Changing directory using absolute path:
+Eg:
+    G:\My Drive>cd "G:\Other computers"
+    G:\Other computers>
+
+==========================================================
+ver - command to know the version of the current windows installed 
+
+Eg:
+    G:\Other computers>ver
+    Microsoft Windows [Version 10.0.19045.5247]
+===========================================================
+
+start - to open another command prompt while working in the present command prompt
+
+============================================================
+
+exit - to close the present opened cmd
+
+=============================================================
+
+wmic logicaldisk get name - shows all the disks in the computer
+C:\Users\WELCOME>wmic logicaldisk get name
+Name
+C:
+D:
+E:
+G:
+
+===============================================================
+
+type c:,e:,d: to move to those drives
+
+===============================================================
+C:\Users\WELCOME>tree
+
+The above prints all the folders, sub folders in a tree like format
+
+===================================================================
+
+Changing colors:
+        C:\Users\WELCOME>color /?
+        The above displays all the available colors.
+
+
+
+
+
+        C:\Users\WELCOME>color 9
+        The above command change the color to blue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
